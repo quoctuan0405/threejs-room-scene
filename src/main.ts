@@ -115,10 +115,10 @@ const generateGalaxy = () => {
   // Create new galaxy
   geometry = new BufferGeometry();
 
-  const positions = new Float32Array(debugObject.count * 3 * 3);
-  const colors = new Float32Array(debugObject.count * 3 * 3);
-  const starScale = new Float32Array(debugObject.count * 1 * 3);
-  const randomness = new Float32Array(debugObject.count * 3 * 3);
+  const positions = new Float32Array(debugObject.count * 3);
+  const colors = new Float32Array(debugObject.count * 3);
+  const starScale = new Float32Array(debugObject.count * 1);
+  const randomness = new Float32Array(debugObject.count * 3);
 
   const colorInside = new Color(debugObject.insideColor);
   const colorOutside = new Color(debugObject.outsideColor);
